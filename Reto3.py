@@ -11,7 +11,7 @@ def AutoPartes(ventas:list)-> dict:
 def consultaRegistro(ventas, idProducto) -> str:
     if idProducto in ventas:
         for i in ventas[idProducto]:
-            print(f'Producto  consultado  :  {idProducto}  Descripción  {i[4]}')
+            print(f'Producto  consultado  :  {idProducto}  Descripción  {i[0]}')
     else:
         print('No hay registro de venta de ese producto')
 
